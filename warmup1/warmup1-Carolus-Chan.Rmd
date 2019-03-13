@@ -1,0 +1,74 @@
+---
+title: "warmup1"
+author: "Carolus Chan"
+date: "February 4, 2019"
+output: html_document
+---
+
+![](https://vignette.wikia.nocookie.net/starwars/images/4/47/Neeku_Resistance.png/revision/latest?cb=20190101033901)\
+
+
+A famous quote from Neeku Vozo:
+
+>*"I once had a pet named Lucky that reminded me of home.and then it died.and then I ate it! And it was supremely delicious!"*
+
+|Physical Descrpition|  |
+|--------------------|- |
+|Species|Nikto|
+|Gender|Male|
+|Eye color|Black|
+|Skin color|Green|
+
+# **Baked Buffalo Wings** #
+
+![](https://farm8.staticflickr.com/7927/31965088607_c2bd20c82f_z.jpg)
+
+## Ingredients ##
+* 1 to 4 pounds chicken wings that have been cut into flats and drumettes
+* 1 1/2 teaspoons to 2 tablespoons baking powder (using 1 1/2 teaspoons per pound)
+* 1 to 4 teaspoons kosher salt (using 1 teaspoon per pound; use less salt if you're not using Diamond brand)
+* 2 tablespoons hot sauce (Frank's RedHot is traditional) per pound of wings
+* 1 1/2 to 2 tablespoons unsalted butter per pound of wings
+
+## Required kitchen items ##
+* large baking sheet
+* oven safe cooling rack
+* tongs or spatula to flip wings
+* large bowl
+
+## Instructions ##
+1. Pat wings dry with a paper towel, and then, in a large bowl, toss them with 1 1/2 teaspoons baking powder and 1 teaspoon kosher salt per pound of wings, until thoroughly coated.
+2. Arrange them on the rack with some space between them (the surface will not dry and crisp as well where they touch) and place in your refrigerator uncovered for 8 to 24 hours.
+3. When you're ready to bake them, heat your oven to 450 degrees, with a rack set in the top half of your oven.
+4. Bake your wings for 20 minutes, flip them with tongs or a spatula, bake them for another 15 minutes, flip them back over again, and then for 15 final minutes, for a total roasting time of 50 minutes. Wings are done with they are browned and crisp.
+5. While the wings roast, make Buffalo wing sauce. In a medium saucepan, for each pound of wings, combine 2 tablespoons of hot sauce and 1 1/2 tablespoons (for a hotter sauce) to 2 tablespoons (for a mild, more buttery sauce) unsalted butter over medium heat until melted, whisking to combine.
+6. When wings are done, roll each in prepared Buffalo wing sauce. Serve with fixings of your choice. Eat immediately.
+
+# Definition ~[edit]~ #
+***
+The **Euclidean distance** between points **p** and **q** is the length of the line segment connecting them (\(\overline{\mathbf{pq}}\)).
+
+In Cartesian coordinates, if **p** = (p~1~, p~2~,..., p~n~) and q = (q~1~, q~2~,..., q~n~) are two points in Euclidean *n*-space, then the distance (d) from **p** to **q**, or from **q** to **p** is given by the Pythagorean formula:
+
+\begin{equation} 
+\label{(1)}
+\begin{split}
+d(\mathbf {p} ,\mathbf {q} )=d(\mathbf {q} ,\mathbf {p} ) & = \sqrt{(q_1-p_1)^2 + (q_2 + p_2)^2+\cdots+(q_n+p_n)^2} \\ & =\sqrt{\sum _{i=1}^n (q_i - p_i)^2.} 
+\end{split}
+\end{equation}
+
+The position of a point in a Euclidean \mathit{n}-space is a Euclidean vector. So, \mathbf{p} and \mathbf{q} may be represented as Euclidean vectors, starting from the origin of the space (initial point) with their tips (terminal points) ending at the two points. The \textbf{Euclidean norm}, or \textbf{Euclidean length}, or \textbf{magnitude} of a vector measures the length of the vector.
+
+\begin{equation}
+\begin{split}
+
+|| \mathbf{p} || = \sqrt{p_1^2+p_2^2+\cdots+p_n^2} = \sqrt{\mathbf{p} \cdot \mathbf{p}}, 
+
+\end{split}
+\end{equation} 
+
+where the last expression involves the dot product.
+
+
+
+
