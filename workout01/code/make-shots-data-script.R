@@ -6,14 +6,14 @@ steph <- read.csv("../data/stephen-curry.csv")
 
 #adding name column to each dataset
 andre$name <- "Andre Iguodala"
-dray$name <- "Graymond Green"
+dray$name <- "Draymond Green"
 kevin$name <- "Kevin Durant"
 klay$name <- "Klay Thompson"
 steph$name <- "Stephen Curry"
 
 #changing y to shot_yes and n to shot_no in all datasets
 library(tidyverse)
-andre %>% 
+andre <- andre %>% 
   mutate(
     shot_made_flag = str_replace(
       shot_made_flag, 'n', 'shot_no')) %>% 
@@ -21,7 +21,7 @@ andre %>%
     shot_made_flag = str_replace(
       shot_made_flag, 'y', 'shot_yes' 
     ))
-dray %>% 
+dray <- dray %>% 
   mutate(
   shot_made_flag = str_replace(
     shot_made_flag, 'n', 'shot_no')) %>% 
@@ -30,7 +30,7 @@ dray %>%
     shot_made_flag, 'y', 'shot_yes' 
   ))
 
-kevin %>% 
+kevin <- kevin %>% 
   mutate(
   shot_made_flag = str_replace(
     shot_made_flag, 'n', 'shot_no')) %>% 
@@ -39,7 +39,7 @@ kevin %>%
     shot_made_flag, 'y', 'shot_yes' 
   ))
 
-klay %>% 
+klay <- klay %>% 
   mutate(
     shot_made_flag = str_replace(
       shot_made_flag, 'n', 'shot_no')) %>% 
@@ -48,7 +48,7 @@ klay %>%
       shot_made_flag, 'y', 'shot_yes' 
     ))
 
-steph %>% 
+steph <- steph %>% 
   mutate(
     shot_made_flag = str_replace(
       shot_made_flag, 'n', 'shot_no')) %>% 
@@ -86,8 +86,12 @@ summary(steph)
 sink()
 
 #rbind() into a single data frame
-
 shots_data <- rbind(andre, dray, kevin, klay, steph)
+
+#export shots_data to csv file
+write.csv(shots_data, file = "../data/shots-data.csv")
+
+#sink shots_data to summary text file
 sink(file = "../output/shots-data-summary.txt")
 summary(shots_data)
 sink()
