@@ -1,0 +1,64 @@
+                 team_name       game_date   
+ Golden State Warriors:1220   12/5/16 :  33  
+                              12/22/16:  24  
+                              4/4/17  :  24  
+                              2/10/17 :  23  
+                              2/4/17  :  23  
+                              3/14/17 :  22  
+                              (Other) :1071  
+     season         period     
+ Min.   :2016   Min.   :1.000  
+ 1st Qu.:2016   1st Qu.:1.000  
+ Median :2016   Median :2.000  
+ Mean   :2016   Mean   :2.369  
+ 3rd Qu.:2016   3rd Qu.:3.000  
+ Max.   :2016   Max.   :4.000  
+                               
+ minutes_remaining seconds_remaining
+ Min.   : 0.000    Min.   : 0.00    
+ 1st Qu.: 4.000    1st Qu.:14.00    
+ Median : 7.000    Median :29.50    
+ Mean   : 6.511    Mean   :29.19    
+ 3rd Qu.: 9.000    3rd Qu.:44.00    
+ Max.   :11.000    Max.   :59.00    
+                                    
+ shot_made_flag              action_type 
+ n:645          Jump Shot          :688  
+ y:575          Pullup Jump shot   :171  
+                Cutting Layup Shot : 48  
+                Layup Shot         : 44  
+                Step Back Jump shot: 34  
+                Driving Layup Shot : 33  
+                (Other)            :202  
+          shot_type   shot_distance  
+ 2PT Field Goal:640   Min.   : 0.00  
+ 3PT Field Goal:580   1st Qu.:12.00  
+                      Median :20.00  
+                      Mean   :17.16  
+                      3rd Qu.:25.00  
+                      Max.   :32.00  
+                                     
+                   opponent         x          
+ Houston Rockets       : 74   Min.   :-248.00  
+ Sacramento Kings      : 74   1st Qu.: -68.00  
+ Memphis Grizzlies     : 70   Median :  14.50  
+ Portland Trail Blazers: 68   Mean   :  24.89  
+ Minnesota Timberwolves: 62   3rd Qu.: 145.25  
+ Los Angeles Clippers  : 60   Max.   : 246.00  
+ (Other)               :812                    
+       y             name          
+ Min.   :-29.0   Length:1220       
+ 1st Qu.: 16.0   Class :character  
+ Median :105.0   Mode  :character  
+ Mean   :106.0                     
+ 3rd Qu.:179.2                     
+ Max.   :311.0                     
+                                   
+    minutes     
+ Min.   : 1.00  
+ 1st Qu.: 9.00  
+ Median :23.00  
+ Mean   :21.91  
+ 3rd Qu.:32.00  
+ Max.   :48.00  
+                

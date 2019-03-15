@@ -9,7 +9,7 @@ andre$name <- "Andre Iguodala"
 dray$name <- "Graymond Green"
 kevin$name <- "Kevin Durant"
 klay$name <- "Klay Thompson"
-steph$anme <- "Stephen Curry"
+steph$name <- "Stephen Curry"
 
 #changing y to shot_yes and n to shot_no in all datasets
 library(tidyverse)
@@ -58,4 +58,38 @@ steph %>%
     ))
 
 #adding minute column to all datasets
+andre$minutes <- (andre$period * 12) - andre$minutes_remaining
+dray$minutes <- (dray$period * 12) - dray$minutes_remaining
+kevin$minutes <- (kevin$period * 12) - kevin$minutes_remaining
+klay$minutes <- (klay$period * 12) - klay$minutes_remaining
+steph$minutes <- (steph$period * 12) - steph$minutes_remaining
+
+#summary output for all datasets
+sink(file = "../output/andre-iguodala-summary.txt")
+summary(andre)
+sink()
+
+sink(file = "../output/draymond-green-summary.txt")
+summary(dray)
+sink()
+
+sink(file = "../output/kevin-durant-summary.txt")
+summary(kevin)
+sink()
+
+sink(file = "../output/klay-thompson-summary.txt")
+summary(klay)
+sink()
+
+sink(file = "../output/stephen-curry-summary.txt")
+summary(steph)
+sink()
+
+#rbind() into a single data frame
+
+shots_data <- rbind(andre, dray, kevin, klay, steph)
+sink(file = "../output/shots-data-summary.txt")
+summary(shots_data)
+sink()
+
 
