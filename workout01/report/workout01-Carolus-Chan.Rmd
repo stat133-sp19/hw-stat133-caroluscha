@@ -1,0 +1,98 @@
+---
+title: "workout01-Carolus-Chan"
+author: Carolus Chan
+output: github_document
+---
+
+```{r echo=FALSE, include=FALSE}
+library(readr)
+library(ggplot2)
+library(grid)
+library(jpeg)
+library(dbplyr)
+library(plotly)
+
+shots_data <- read.csv("../data/shots-data.csv")
+andre <- shots_data[shots_data$name == "Andre Iguodala",]
+dray <- shots_data[shots_data$name == "Draymond Green",]
+kevin <- shots_data[shots_data$name == "Kevin Durant",]
+klay <- shots_data[shots_data$name == "Klay Thompson",]
+steph <- shots_data[shots_data$name == "Stephen Curry",]
+
+shots_total <- summarise(
+  group_by(shots_data, name),
+  total = length(shot_made_flag),
+  made = length(shot_made_flag[shot_made_flag =="shot_yes"]),
+  perc_made = made / total *100
+)
+
+shots_2pt <- summarise(
+  group_by(shots_data, name),
+  total = length(
+    shot_made_flag[
+      shot_type == "2PT Field Goal"]),
+  made = length(
+    shot_made_flag[
+      shot_made_flag =="shot_yes" & 
+      shot_type == "2PT Field Goal"]),
+  perc_made = made / total *100
+)
+
+shots_3pt <- summarise(
+  group_by(shots_data, name),
+  total = length(
+    shot_made_flag[
+      shot_type == "3PT Field Goal"]),
+  made = length(
+    shot_made_flag[
+      shot_made_flag =="shot_yes" & 
+      shot_type == "3PT Field Goal"]),
+  perc_made = made / total *100
+)
+```
+
+It is the ultimate win condition in basketball to be the team that makes the most baskets in a given game. It is no wonder that basketball players are evaluated heavily on the shots make whether it be 2pt, 3pt, of free throw shots. The Golden States Warriors (GSW) is arguably the best team as of the last few years. Here, we take a look at some stats of shots made of the 5 players from the GSW in the 2016 season. 
+
+Before we jump into any of the numbers. Let's do a brief introduction of the players. 
+
+#Andre Iguodala#
+35 years old
+Shooting guard / Small forward
+Joined the GSW in 2013
+```{r Andre Iguodala, out.width='80%', echo= FALSE, fig.align='center'}
+knitr::include_graphics("Andre_Iguodala_2016_(cropped).jpg")
+```
+
+
+#Draymond Green# 
+29 years old
+Power forward
+Joined the GSW in 2012
+```{r Draymond Green, out.width='80%', echo= FALSE, fig.align='center'}
+knitr::include_graphics("Draymond_Green_against_Washington_(cropped).jpeg")
+```
+
+#Kevin Durant#
+30 years old
+Small forward
+Joined the GSW in 2016
+```{r Kevin Durant, out.width='80%', echo= FALSE, fig.align='center'}
+knitr::include_graphics("../image/Golden_State_Warriors_Small_Forward_Kevin_Durant_(cropped).jpeg")
+```
+
+#Klay Thompson#
+29 years old
+Shooting guard
+Joined the GSW in 2011
+```{r Klay Thompson, out.width='80%', echo= FALSE, fig.align='center'}
+knitr::include_graphics("../image/Klay_Thompson_vs._Jared_Dudley_(cropped).jpeg")
+```
+
+
+
+
+```{r out.width='80%', echo= FALSE, fig.align='center'}
+
+
+```
+
