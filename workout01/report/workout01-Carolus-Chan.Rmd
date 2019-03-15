@@ -11,6 +11,7 @@ library(grid)
 library(jpeg)
 library(dbplyr)
 library(plotly)
+library(Hmisc)
 
 shots_data <- read.csv("../data/shots-data.csv")
 andre <- shots_data[shots_data$name == "Andre Iguodala",]
@@ -56,43 +57,64 @@ It is the ultimate win condition in basketball to be the team that makes the mos
 Before we jump into any of the numbers. Let's do a brief introduction of the players. 
 
 #Andre Iguodala#
-35 years old
-Shooting guard / Small forward
-Joined the GSW in 2013
-```{r Andre Iguodala, out.width='80%', echo= FALSE, fig.align='center'}
+35 years old \
+Shooting guard / Small forward \
+Joined the GSW in 2013 \
+```{r Andre Iguodala, out.width='60%', echo= FALSE, fig.align='center'}
 knitr::include_graphics("Andre_Iguodala_2016_(cropped).jpg")
 ```
 
 
 #Draymond Green# 
-29 years old
-Power forward
-Joined the GSW in 2012
-```{r Draymond Green, out.width='80%', echo= FALSE, fig.align='center'}
-knitr::include_graphics("Draymond_Green_against_Washington_(cropped).jpeg")
+29 years old \
+Power forward \
+Joined the GSW in 2012 \
+```{r Draymond Green, out.width='60%', echo= FALSE, fig.align='center'}
+knitr::include_graphics("Draymond_Green_against_Washington_(cropped).jpg")
 ```
 
 #Kevin Durant#
-30 years old
-Small forward
-Joined the GSW in 2016
-```{r Kevin Durant, out.width='80%', echo= FALSE, fig.align='center'}
-knitr::include_graphics("../image/Golden_State_Warriors_Small_Forward_Kevin_Durant_(cropped).jpeg")
+30 years old \
+Small forward \
+Joined the GSW in 2016 \
+```{r Kevin Durant, out.width='60%', echo= FALSE, fig.align='center'}
+knitr::include_graphics("Golden_State_Warriors_Small_Forward_Kevin_Durant_(cropped).jpg")
 ```
 
 #Klay Thompson#
-29 years old
-Shooting guard
-Joined the GSW in 2011
-```{r Klay Thompson, out.width='80%', echo= FALSE, fig.align='center'}
-knitr::include_graphics("../image/Klay_Thompson_vs._Jared_Dudley_(cropped).jpeg")
+29 years old \
+Shooting guard \
+Joined the GSW in 2011 \
+```{r Klay Thompson, out.width='60%', echo= FALSE, fig.align='center'}
+knitr::include_graphics("Klay_Thompson_vs._Jared_Dudley_(cropped).jpg")
 ```
 
+#Stephen Curry#
+31 years old 
+Point guard
+Joined GSW in 2009
+```{r Stephen Curry, out.width='60%', echo= FALSE, fig.align='center'}
+knitr::include_graphics("Stephen_Curry_Shooting_(cropped).jpg")
+```
 
+Now on to the stats. Below are three tables for shots made and shots taken for the season of 2016
 
+```{r 2pt shots, echo=FALSE}
+shots_2pt
+```
+
+```{r 3pt shots, echo=FALSE}
+shots_3pt
+```
+
+```{r total shots, echo=FALSE}
+shots_total
+```
+
+We can see from the total (3rd chart) the success rate of making shots is relative even across players. As expected the 2pt shots have a higher success rate than 3pts about 10% higher. 
 
 ```{r out.width='80%', echo= FALSE, fig.align='center'}
-
+knitr::include_graphics("gsw-shot-charts.png")
 
 ```
 
